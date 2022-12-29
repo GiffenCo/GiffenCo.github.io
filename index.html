@@ -8,35 +8,37 @@
       color: lightgrey;
     }
     .light-grey-text {
-    color: #d3d3d3;
+      color: #d3d3d3;
     }
-
   </style>
 </head>
 
 <body>
-<p>&nbsp;</p>
-<p style="text-align:center"><img alt="Giffen &amp; Co" src="https://raw.githubusercontent.com/GiffenCo/GiffenCo.github.io/492c67559ad9909d3f83b83ecfab4366a750e43a/3%20%20Wheat.png" style="height:292px; width:250px" /></p>
+  <p style="text-align:center">
+    <img alt="Giffen & Co" src="https://raw.githubusercontent.com/GiffenCo/GiffenCo.github.io/492c67559ad9909d3f83b83ecfab4366a750e43a/3%20%20Wheat.png" style="height:292px; width:250px" />
+  </p>
 
-<p style="text-align:center">Giffen &amp; Co is a collection of independent, internet optimized, brands.&nbsp;</p>
+  <p style="text-align:center">
+    Giffen & Co is a collection of independent, internet optimized, brands.
+  </p>
 
-<p style="text-align:center">We are always evaluating collaborations. Please reach out, we would love to chat;&nbsp;<a href="mailto:inquiries@giffen.co ?subject=I%20would%20love%20to%20collaborate%20on...&amp;body=Hello%20Giffen%20Team%2C%20%0A%0AMy%20name%20is">inquiries@giffen.co</a>&nbsp;</p>
+  <p style="text-align:center">
+    We are always evaluating collaborations. Please reach out, we would love to chat; <a href="mailto:inquiries@giffen.co?subject=I%20would%20love%20to%20collaborate%20on...&amp;body=Hello%20Giffen%20Team%2C%20%0A%0AMy%20name%20is">inquiries@giffen.co</a>
+  </p>
 
-<p style="text-align:center">&nbsp;</p>
+  <footer>
+    <p style="text-align:center" class="light-grey-text">
+      Giffen & Co, LLC, All rights reserved.&nbsp;&nbsp;Ⓒ2022
+    </p>
+    <p style="text-align:right" class="light-grey-text">
+      Your IP Address:
+    </p>
+    <p style="text-align:right" id="ip"></p>
+  </footer>
 
-  
- 
-           
-           
-<footer>
-  <p style="text-align:center" class="light-grey-text">Giffen &amp; Co, LLC, All rights reserved.&nbsp;&nbsp;Ⓒ2022</p>
-  <p style="text-align:right" class="light-grey-text" >Your IP Address:</p>
-  <p style="text-align:right" id="ip"></p>
-</footer>
-                                     
   <script>
     // Use an API to get the user's IP address
-  fetch('https://api.ipify.org?format=json')
+    fetch('https://api.ipify.org?format=json')
       .then(response => response.json())
       .then(data => {
         // Display the IP address in the paragraph element
@@ -44,105 +46,7 @@
       });
   </script>
   
-  
-  
-  
- <!--  login info
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body 
-form {border: 3px solid #f1f1f1;}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
-</head>
-<body>
-
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-  </div>
-
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-
-  </div>
-</form>
-
-  -->
-  
-
-
-  
-  
-  
-  
+ 
   
 
   </body>
