@@ -109,6 +109,24 @@ span.psw {
   -->
   
 
+  <h1>Your IP Address:</h1>
+  <p id="ip"></p>
+
+  <script>
+    // Use an API to get the user's IP address
+    fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => {
+        // Display the IP address in the paragraph element
+        document.getElementById('ip').innerHTML = data.ip;
+      });
+  </script>
+  
+  
+  
+  
+  
+
   </body>
 </html>
 
