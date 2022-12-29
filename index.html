@@ -22,7 +22,23 @@
 
 <p style="text-align:center">Giffen &amp; Co, LLC, All rights reserved.&nbsp;&nbsp;Ⓒ2022</p>
   
+  
+  <p style="text-align:right" >Your IP Address:</p>
+  <p style="text-align:right" id="ip"></p>
 
+  <script>
+    // Use an API to get the user's IP address
+  fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => {
+        // Display the IP address in the paragraph element
+        document.getElementById('ip').innerHTML = data.ip;
+      });
+  </script>
+  
+  
+  
+  
  <!--  login info
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -114,18 +130,7 @@ span.psw {
   -->
   
 
-  <p>Your IP Address:</p>
-  <p id="ip"></p>
 
-  <script>
-    // Use an API to get the user's IP address
-  fetch('https://api.ipify.org?format=json')
-      .then(response => response.json())
-      .then(data => {
-        // Display the IP address in the paragraph element
-        document.getElementById('ip').innerHTML = data.ip;
-      });
-  </script>
   
   
   
